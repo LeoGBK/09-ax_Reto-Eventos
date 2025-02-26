@@ -1,81 +1,139 @@
 /* Styles for the entire body. */
 body {
-    height: 100%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(127, 204, 255);
+  height: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+/* Styles for this class (<header> and <footer>). */
+.cabeceraypie {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+/* Styles just for the header. */
+header {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+main {
+  margin-bottom: 2em;
+}
+
+.titulo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.menu {
+  display: inline-flex;
+  padding-top: 2em;
+  font-size: small;
+
+  ul {
+    padding-left: 1em;
+    padding-right: 1em;
   }
-  
-  /* Styles for this class (<header> and <footer>). */
-  .cabeceraypie {
-    background-color: rgb(53, 53, 53);
-    color: white;
-  }
-  
-  /* Styles just for the header. */
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  border: 2px solid gainsboro;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  align-content: space-around;
+  margin: 1em;
+}
+
+/* Style created to center IMG tags with "center" within "tarjeta" */
+.center {
+  display: block;
+  width: 220px;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+p {
+  font-size: x-small;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/* Marging styles settings for the button. */
+button {
+  background-color: rgb(3, 161, 3);
+  color: white;
+  border: none;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-bottom: 2em;
+}
+
+/* Styles just for the footer. */
+footer {
+  position: fixed;
+  bottom: 0;
+  font-size: xx-small;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+/* Applying media query to change <img> and text size when the display width is higher. */
+@media only screen and (min-width: 500px) {
   header {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    font-size: larger;
-    font-weight: bold;
-    margin-bottom: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
   }
-  
-  /* Styles for the object (circle). */
-  div {
-    background-color: lightgreen;
-    height: 180px;
-    width: 180px;
-    border: solid black;
-    /* Shaping a circle with this property. */
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
+
+  main {
+    margin-bottom: 4em;
   }
-  
-  /* Styles for the text within the circle. */
+
+  .titulo {
+    font-size: xx-large;
+  }
+
+  .menu {
+    font-size: small;
+  }
+
+  .center {
+    width: 350px;
+  }
+
+  h2 {
+    padding-top: 0.5em;
+    font-size: x-large;
+  }
+
   p {
-    padding-top: 1em;
-    font-size: 16px;
+    font-size: 15px;
   }
-  
-  /* Marging styles settings for the button. */
+
   button {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    font-size: 20px;
   }
-  
-  /* Styles just for the footer. */
+
   footer {
-    position: fixed;
-    bottom: 0;
-    font-size: xx-small;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    width: 100%;
+    font-size: medium;
+    padding-top: 2em;
+    padding-bottom: 1.5em;
   }
-  
-  /* Applying media query to change <img> and text size when the display width is higher. */
-  @media only screen and (min-width: 500px) {
-    header {
-      padding-top: 2em;
-      padding-bottom: 2em;
-      font-size: xx-large;
-    }
-  
-    div {
-      height: 280px;
-      width: 280px;
-    }
-  
-    p {
-      font-size: 25px;
-    }
-  
-    footer {
-      font-size: medium;
-      padding-top: 2em;
-      padding-bottom: 1.5em;
-    }
-  }
-  
+}
