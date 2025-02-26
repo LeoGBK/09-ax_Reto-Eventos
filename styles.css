@@ -19,6 +19,18 @@ header {
   margin-bottom: 1em;
 }
 
+.popup {
+  height: 70px;
+  width: 120px;
+  background-color: rgb(3, 161, 3);
+  position: fixed;
+  top: 20px;
+}
+
+.aviso {
+  color: white;
+}
+
 main {
   margin-bottom: 2em;
 }
