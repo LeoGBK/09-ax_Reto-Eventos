@@ -20,6 +20,7 @@ header {
 }
 
 #popup {
+  display: none; /* Avoids popup to be displayed */
   height: 70px;
   width: 120px;
   background-color: rgb(3, 161, 3);
