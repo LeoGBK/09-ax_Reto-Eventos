@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
             aviso.textContent = `Producto agregado al carrito: ${producto.querySelector('h2').textContent}`;
             popup.style.display = 'block'; // Making popup to be displayed.
             // Making the following instruction to execute after 3 seconds.
-            setInterval(() => {
+            setTimeout(() => {
                 popup.style.display = 'none';
-            }, 3000)
-        })
-    })
-})
+            }, 3000);
+        });
+    });
+});
