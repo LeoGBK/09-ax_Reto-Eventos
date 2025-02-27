@@ -22,14 +22,15 @@ header {
 #popup {
   display: none; /* Avoids popup to be displayed */
   height: 70px;
-  width: 120px;
+  width: 200px;
   background-color: rgb(3, 161, 3);
   position: fixed;
-  top: 20px;
+  top: 25px;
 }
 
 #aviso {
   color: white;
+  font-size: small;
 }
 
 main {
@@ -117,8 +118,8 @@ footer {
 /* Applying media query to change <img> and text size when the display width is higher. */
 @media only screen and (min-width: 500px) {
   header {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
   }
 
   main {
@@ -135,6 +136,16 @@ footer {
 
   .center {
     width: 350px;
+  }
+
+  #popup {
+    height: 90px;
+    width: 270px;
+    top: 30px;
+  }
+
+  #aviso {
+    font-size: medium;
   }
 
   h2 {
