@@ -19,7 +19,7 @@ header {
   margin-bottom: 1em;
 }
 
-.popup {
+#popup {
   height: 70px;
   width: 120px;
   background-color: rgb(3, 161, 3);
@@ -27,7 +27,7 @@ header {
   top: 20px;
 }
 
-.aviso {
+#aviso {
   color: white;
 }
 
