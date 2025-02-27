@@ -42,13 +42,18 @@ main {
 }
 
 .menu {
-  display: inline-flex;
   padding-top: 2em;
   font-size: small;
 
-  ul {
+  li {
+    display: inline;
     padding-left: 1em;
     padding-right: 1em;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
   }
 }
 
@@ -96,6 +101,7 @@ button {
   padding: 0.5em;
   border-radius: 4px;
   margin-bottom: 2em;
+  cursor: pointer;
 }
 
 /* Styles just for the footer. */
